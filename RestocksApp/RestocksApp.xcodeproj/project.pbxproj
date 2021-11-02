@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37246394262F17DB009B34E7 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 37246392262F17DB009B34E7 /* Gemfile */; };
+		3724639A262F18CF009B34E7 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 37246399262F18CF009B34E7 /* Fastfile */; };
+		37557E502697367000D68C74 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 37557E4F2697367000D68C74 /* .swiftlint.yml */; };
+		3758F33C262DBAE700C3B369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3758F33B262DBAE700C3B369 /* README.md */; };
+		3780BF1C26666F1D0029076A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3780BF1E26666F1E0029076A /* Localizable.strings */; };
+		37AB7CCD2670A4930029447B /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB7CCC2670A4930029447B /* Intercom.xcframework */; };
+		37AB7CCE2670A4930029447B /* Intercom.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB7CCC2670A4930029447B /* Intercom.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37AB7CD12670AB200029447B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37AB7CD32670AB200029447B /* InfoPlist.strings */; };
+		D242D82C263958000079D99D /* Lokalise.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D242D82B263958000079D99D /* Lokalise.xcframework */; };
+		D242D82D263958000079D99D /* Lokalise.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D242D82B263958000079D99D /* Lokalise.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D242D83026395B490079D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D242D82F26395B490079D99D /* AppDelegate.swift */; };
+		D242D8702639695C0079D99D /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D242D86F2639695C0079D99D /* XCTestCase+MemoryLeakTracking.swift */; };
+		D253B54F260A0A4E001A4195 /* RestocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253B54E260A0A4E001A4195 /* RestocksApp.swift */; };
+		D253B553260A0A50001A4195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D253B552260A0A50001A4195 /* Assets.xcassets */; };
+		D25EBC362631713E008F9D73 /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = D25EBC352631713E008F9D73 /* Mintfile */; };
+		D291D83C262466E300812822 /* Restocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25CD52B260A0C0F00CA8560 /* Restocks.framework */; };
+		D291D83D262466E300812822 /* Restocks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25CD52B260A0C0F00CA8560 /* Restocks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D291D83F262466E500812822 /* RestocksiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25CD52C260A0C0F00CA8560 /* RestocksiOS.framework */; };
+		D291D840262466E500812822 /* RestocksiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25CD52C260A0C0F00CA8560 /* RestocksiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D253B55D260A0A50001A4195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D253B543260A0A4E001A4195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D253B54A260A0A4E001A4195;
+			remoteInfo = RestocksApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D291D83E262466E300812822 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37AB7CCE2670A4930029447B /* Intercom.xcframework in Embed Frameworks */,
+				D242D82D263958000079D99D /* Lokalise.xcframework in Embed Frameworks */,
+				D291D840262466E500812822 /* RestocksiOS.framework in Embed Frameworks */,
+				D291D83D262466E300812822 /* Restocks.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37246392262F17DB009B34E7 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		37246399262F18CF009B34E7 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = ../fastlane/Fastfile; sourceTree = "<group>"; };
+		37557E4F2697367000D68C74 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
+		3758F33B262DBAE700C3B369 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3780BF1D26666F1E0029076A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3780BF1F26666F230029076A /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3780BF2026666F240029076A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3780BF2126666F250029076A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3780BF2226666F250029076A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3780BF2326666F260029076A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37AB7CC7266FC2700029447B /* RestocksApp-debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RestocksApp-debug.entitlements"; sourceTree = "<group>"; };
+		37AB7CCC2670A4930029447B /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../Frameworks/Intercom.xcframework; sourceTree = "<group>"; };
+		37AB7CD22670AB200029447B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AB7CD42670AB250029447B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AB7CD52670AB290029447B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AB7CD62670AB2A0029447B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AB7CD72670AB2B0029447B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AB7CD82670AB2B0029447B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D242D82B263958000079D99D /* Lokalise.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lokalise.xcframework; path = ../Frameworks/Lokalise.xcframework; sourceTree = "<group>"; };
+		D242D82F26395B490079D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D242D86F2639695C0079D99D /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		D253B54B260A0A4E001A4195 /* RestocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D253B54E260A0A4E001A4195 /* RestocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestocksApp.swift; sourceTree = "<group>"; };
+		D253B552260A0A50001A4195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D253B557260A0A50001A4195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D253B55C260A0A50001A4195 /* RestocksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestocksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D253B562260A0A50001A4195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25CD52B260A0C0F00CA8560 /* Restocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Restocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25CD52C260A0C0F00CA8560 /* RestocksiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestocksiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25EBC352631713E008F9D73 /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Mintfile; path = ../Mintfile; sourceTree = "<group>"; };
+		D28F4D7126E643230072F9E4 /* RestocksApp-release.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "RestocksApp-release.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D253B548260A0A4E001A4195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AB7CCD2670A4930029447B /* Intercom.xcframework in Frameworks */,
+				D242D82C263958000079D99D /* Lokalise.xcframework in Frameworks */,
+				D291D83F262466E500812822 /* RestocksiOS.framework in Frameworks */,
+				D291D83C262466E300812822 /* Restocks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D253B559260A0A50001A4195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37246390262F17BE009B34E7 /* Config files */ = {
+			isa = PBXGroup;
+			children = (
+				37557E4F2697367000D68C74 /* .swiftlint.yml */,
+				D25EBC352631713E008F9D73 /* Mintfile */,
+				37246399262F18CF009B34E7 /* Fastfile */,
+				37246392262F17DB009B34E7 /* Gemfile */,
+			);
+			name = "Config files";
+			sourceTree = "<group>";
+		};
+		3780BF1926666ECC0029076A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3780BF1E26666F1E0029076A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D242D872263969900079D99D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D242D86F2639695C0079D99D /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D253B542260A0A4E001A4195 = {
+			isa = PBXGroup;
+			children = (
+				3758F33B262DBAE700C3B369 /* README.md */,
+				D253B54D260A0A4E001A4195 /* RestocksApp */,
+				37246390262F17BE009B34E7 /* Config files */,
+				D253B55F260A0A50001A4195 /* RestocksAppTests */,
+				D253B54C260A0A4E001A4195 /* Products */,
+				D25CD52A260A0C0F00CA8560 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D253B54C260A0A4E001A4195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D253B54B260A0A4E001A4195 /* RestocksApp.app */,
+				D253B55C260A0A50001A4195 /* RestocksAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D253B54D260A0A4E001A4195 /* RestocksApp */ = {
+			isa = PBXGroup;
+			children = (
+				D28F4D7026E642D00072F9E4 /* Entitlements */,
+				3780BF1926666ECC0029076A /* Resources */,
+				D242D82F26395B490079D99D /* AppDelegate.swift */,
+				D253B54E260A0A4E001A4195 /* RestocksApp.swift */,
+				D253B552260A0A50001A4195 /* Assets.xcassets */,
+				D253B557260A0A50001A4195 /* Info.plist */,
+				37AB7CD32670AB200029447B /* InfoPlist.strings */,
+			);
+			path = RestocksApp;
+			sourceTree = "<group>";
+		};
+		D253B55F260A0A50001A4195 /* RestocksAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D242D872263969900079D99D /* Helpers */,
+				D253B562260A0A50001A4195 /* Info.plist */,
+			);
+			path = RestocksAppTests;
+			sourceTree = "<group>";
+		};
+		D25CD52A260A0C0F00CA8560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37AB7CCC2670A4930029447B /* Intercom.xcframework */,
+				D242D82B263958000079D99D /* Lokalise.xcframework */,
+				D25CD52B260A0C0F00CA8560 /* Restocks.framework */,
+				D25CD52C260A0C0F00CA8560 /* RestocksiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D28F4D7026E642D00072F9E4 /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				D28F4D7126E643230072F9E4 /* RestocksApp-release.entitlements */,
+				37AB7CC7266FC2700029447B /* RestocksApp-debug.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D253B54A260A0A4E001A4195 /* RestocksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D253B570260A0A50001A4195 /* Build configuration list for PBXNativeTarget "RestocksApp" */;
+			buildPhases = (
+				D253B547260A0A4E001A4195 /* Sources */,
+				D253B548260A0A4E001A4195 /* Frameworks */,
+				D253B549260A0A4E001A4195 /* Resources */,
+				D291D83E262466E300812822 /* Embed Frameworks */,
+				37557E4E2697365500D68C74 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestocksApp;
+			packageProductDependencies = (
+			);
+			productName = RestocksApp;
+			productReference = D253B54B260A0A4E001A4195 /* RestocksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D253B55B260A0A50001A4195 /* RestocksAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D253B573260A0A50001A4195 /* Build configuration list for PBXNativeTarget "RestocksAppTests" */;
+			buildPhases = (
+				D253B558260A0A50001A4195 /* Sources */,
+				D253B559260A0A50001A4195 /* Frameworks */,
+				D253B55A260A0A50001A4195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D253B55E260A0A50001A4195 /* PBXTargetDependency */,
+			);
+			name = RestocksAppTests;
+			productName = RestocksAppTests;
+			productReference = D253B55C260A0A50001A4195 /* RestocksAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D253B543260A0A4E001A4195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D253B54A260A0A4E001A4195 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D253B55B260A0A50001A4195 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+						TestTargetID = D253B54A260A0A4E001A4195;
+					};
+				};
+			};
+			buildConfigurationList = D253B546260A0A4E001A4195 /* Build configuration list for PBXProject "RestocksApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				nl,
+				fr,
+				de,
+				it,
+				es,
+			);
+			mainGroup = D253B542260A0A4E001A4195;
+			packageReferences = (
+			);
+			productRefGroup = D253B54C260A0A4E001A4195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D253B54A260A0A4E001A4195 /* RestocksApp */,
+				D253B55B260A0A50001A4195 /* RestocksAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D253B549260A0A4E001A4195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37557E502697367000D68C74 /* .swiftlint.yml in Resources */,
+				D25EBC362631713E008F9D73 /* Mintfile in Resources */,
+				3780BF1C26666F1D0029076A /* Localizable.strings in Resources */,
+				37AB7CD12670AB200029447B /* InfoPlist.strings in Resources */,
+				3724639A262F18CF009B34E7 /* Fastfile in Resources */,
+				3758F33C262DBAE700C3B369 /* README.md in Resources */,
+				37246394262F17DB009B34E7 /* Gemfile in Resources */,
+				D253B553260A0A50001A4195 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D253B55A260A0A50001A4195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37557E4E2697365500D68C74 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --config ../.swiftlint.yml\n  swiftlint --config ../.swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D253B547260A0A4E001A4195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D242D83026395B490079D99D /* AppDelegate.swift in Sources */,
+				D253B54F260A0A4E001A4195 /* RestocksApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D253B558260A0A50001A4195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D242D8702639695C0079D99D /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D253B55E260A0A50001A4195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D253B54A260A0A4E001A4195 /* RestocksApp */;
+			targetProxy = D253B55D260A0A50001A4195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3780BF1E26666F1E0029076A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3780BF1D26666F1E0029076A /* en */,
+				3780BF1F26666F230029076A /* nl */,
+				3780BF2026666F240029076A /* fr */,
+				3780BF2126666F250029076A /* de */,
+				3780BF2226666F250029076A /* it */,
+				3780BF2326666F260029076A /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		37AB7CD32670AB200029447B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37AB7CD22670AB200029447B /* en */,
+				37AB7CD42670AB250029447B /* nl */,
+				37AB7CD52670AB290029447B /* fr */,
+				37AB7CD62670AB2A0029447B /* de */,
+				37AB7CD72670AB2B0029447B /* it */,
+				37AB7CD82670AB2B0029447B /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D253B56E260A0A50001A4195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D253B56F260A0A50001A4195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D253B571260A0A50001A4195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RestocksApp/Entitlements/RestocksApp-debug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_ASSET_PATHS = "\"RestocksApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RestocksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D253B572260A0A50001A4195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RestocksApp/Entitlements/RestocksApp-release.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 23;
+				DEVELOPMENT_ASSET_PATHS = "\"RestocksApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RestocksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore net.restocks.RestocksApp";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D253B574260A0A50001A4195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestocksApp.app/RestocksApp";
+			};
+			name = Debug;
+		};
+		D253B575260A0A50001A4195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestocksApp.app/RestocksApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D253B546260A0A4E001A4195 /* Build configuration list for PBXProject "RestocksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D253B56E260A0A50001A4195 /* Debug */,
+				D253B56F260A0A50001A4195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D253B570260A0A50001A4195 /* Build configuration list for PBXNativeTarget "RestocksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D253B571260A0A50001A4195 /* Debug */,
+				D253B572260A0A50001A4195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D253B573260A0A50001A4195 /* Build configuration list for PBXNativeTarget "RestocksAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D253B574260A0A50001A4195 /* Debug */,
+				D253B575260A0A50001A4195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D253B543260A0A4E001A4195 /* Project object */;
+}

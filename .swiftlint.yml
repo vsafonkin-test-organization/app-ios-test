@@ -1,0 +1,21 @@
+excluded:
+    - build
+    - derivedData
+    - RestocksiOS/Resources
+    - vendor
+
+# Rules we disabled for now, and we can enable with time.
+disabled_rules:
+    - identifier_name
+    - large_tuple
+    - line_length
+    - nesting
+    - todo
+    - type_name
+ 
+opt_in_rules:
+    - 
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+#..

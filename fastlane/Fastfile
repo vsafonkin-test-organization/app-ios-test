@@ -1,0 +1,74 @@
+fastlane_require "dotenv"
+
+before_all do
+  Dotenv.load ".env.secret"
+end
+
+desc "Create app on Developer Portal and App Store Connect"
+lane :create_app do
+  create_app_online # produce
+end
+
+
+platform :ios do
+  desc "Sync signing"
+  lane :signing do
+    sync_code_signing # match
+  end
+
+  desc "Build binary"
+  lane :build do
+    signing
+    build_ios_app # gym
+  end
+
+  desc "Bump the build number by 1"
+  lane :bump_build do
+    ensure_git_status_clean
+
+    date_time = Time.now.strftime("%Y.%m.%d.%H.%M")
+
+    build_number = increment_build_number(
+      build_number: date_time,
+      xcodeproj: "Restocks.xcodeproj"
+    )
+
+    build_number = increment_build_number(
+      build_number: date_time,
+      xcodeproj: "RestocksApp/RestocksApp.xcodeproj"
+    )
+  end
+
+  desc "Publish build to TestFlight"
+  lane :beta do
+    ensure_git_status_clean
+    app_store_connect_api_key
+
+    bump_build
+    build
+    upload_to_testflight # pilot
+
+    clean_build_artifacts
+    reset_git_repo
+  end
+
+  desc "Download latest translations from Lokalise for RestocksiOS - resources"
+  lane :download_lokalise_translations do
+    lokalise(
+      destination: "RestocksiOS/Resources",
+      bundle_description_name: "RestocksiOS_resources",
+      excluded_tags: ["restocksapp_info_plist"],
+    )
+  end
+
+  desc "Download latest translations from Lokalise for RestocksApp - info.plist"
+  lane :download_lokalise_translations_info_plist do
+    lokalise(
+      destination: "RestocksApp/RestocksApp",
+      bundle_description_name: "RestocksApp_infoPlist",
+      tags: ["restocksapp_info_plist"],
+      use_original: "true",
+    )
+  end
+
+end

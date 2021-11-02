@@ -1,0 +1,32 @@
+## User settings
+xcuserdata/
+
+## Mac OS X
+.DS_Store
+
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+# fastlane secrets
+**/fastlane/.env.secret
+
+# fastlane - creating builds
+build
+
+# App Store Connect API Key
+**/fastlane/*.p8
+
+# Bundler
+vendor
+
+# R.swift
+*.generated.swift

@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		376E5356273193ED00F38B36 /* RestocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E5355273193ED00F38B36 /* RestocksTests.swift */; };
+		376E5359273196C200F38B36 /* RestocksiOSSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E53572731948900F38B36 /* RestocksiOSSnapshotTests.swift */; };
+		376E535B273196ED00F38B36 /* RestocksiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E535A273196ED00F38B36 /* RestocksiOSTests.swift */; };
+		3780BE8826554C550029076A /* RestocksiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F373B52608F00000FC73AF /* RestocksiOS.framework */; };
+		3780BE9826554E020029076A /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 3780BE9726554E020029076A /* SnapshotTesting */; };
+		37AB7CC6266FC0BD0029447B /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 37AB7CC5266FC0BD0029447B /* Rswift */; };
+		37AB7CCA2670A3F50029447B /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB7CC82670A2E10029447B /* Intercom.xcframework */; };
+		C56EF5D927034504004FA1DF /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D21825412608A07600552A31 /* Restocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21825372608A07600552A31 /* Restocks.framework */; };
+		D242D822263952B20079D99D /* Lokalise.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D242D821263952B20079D99D /* Lokalise.xcframework */; };
+		D2E036CB2609E026001D55F3 /* Restocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21825372608A07600552A31 /* Restocks.framework */; platformFilter = ios; };
+		D2F373BE2608F00000FC73AF /* RestocksiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F373B52608F00000FC73AF /* RestocksiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3780BE8926554C550029076A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D218252E2608A07600552A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F373B42608F00000FC73AF;
+			remoteInfo = RestocksiOS;
+		};
+		D21825422608A07600552A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D218252E2608A07600552A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21825362608A07600552A31;
+			remoteInfo = Restocks;
+		};
+		D2E036CD2609E026001D55F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D218252E2608A07600552A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21825362608A07600552A31;
+			remoteInfo = Restocks;
+		};
+		D2F373BF2608F00000FC73AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D218252E2608A07600552A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F373B42608F00000FC73AF;
+			remoteInfo = RestocksiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D242D7DA26371C230079D99D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		376E5355273193ED00F38B36 /* RestocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestocksTests.swift; sourceTree = "<group>"; };
+		376E53572731948900F38B36 /* RestocksiOSSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestocksiOSSnapshotTests.swift; sourceTree = "<group>"; };
+		376E535A273196ED00F38B36 /* RestocksiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestocksiOSTests.swift; sourceTree = "<group>"; };
+		3780BE8326554C550029076A /* RestocksiOSSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestocksiOSSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3780BE8726554C550029076A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37AB7CC82670A2E10029447B /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Intercom.xcframework; sourceTree = "<group>"; };
+		D21825372608A07600552A31 /* Restocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Restocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D218253B2608A07600552A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21825402608A07600552A31 /* RestocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21825472608A07600552A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D242D821263952B20079D99D /* Lokalise.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Lokalise.xcframework; sourceTree = "<group>"; };
+		D2F373B52608F00000FC73AF /* RestocksiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestocksiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F373B82608F00000FC73AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F373BD2608F00000FC73AF /* RestocksiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestocksiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F373C42608F00000FC73AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3780BE8026554C550029076A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780BE8826554C550029076A /* RestocksiOS.framework in Frameworks */,
+				3780BE9826554E020029076A /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21825342608A07600552A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D218253D2608A07600552A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21825412608A07600552A31 /* Restocks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373B22608F00000FC73AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AB7CCA2670A3F50029447B /* Intercom.xcframework in Frameworks */,
+				37AB7CC6266FC0BD0029447B /* Rswift in Frameworks */,
+				D2E036CB2609E026001D55F3 /* Restocks.framework in Frameworks */,
+				D242D822263952B20079D99D /* Lokalise.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373BA2608F00000FC73AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F373BE2608F00000FC73AF /* RestocksiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3780BE8426554C550029076A /* RestocksiOSSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				376E53572731948900F38B36 /* RestocksiOSSnapshotTests.swift */,
+				3780BE8726554C550029076A /* Info.plist */,
+			);
+			path = RestocksiOSSnapshotTests;
+			sourceTree = "<group>";
+		};
+		D218252D2608A07600552A31 = {
+			isa = PBXGroup;
+			children = (
+				D21825392608A07600552A31 /* Restocks */,
+				D21825442608A07600552A31 /* RestocksTests */,
+				D2F373B62608F00000FC73AF /* RestocksiOS */,
+				D2F373C12608F00000FC73AF /* RestocksiOSTests */,
+				3780BE8426554C550029076A /* RestocksiOSSnapshotTests */,
+				D21825382608A07600552A31 /* Products */,
+				D2E036CA2609E026001D55F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D21825382608A07600552A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21825372608A07600552A31 /* Restocks.framework */,
+				D21825402608A07600552A31 /* RestocksTests.xctest */,
+				D2F373B52608F00000FC73AF /* RestocksiOS.framework */,
+				D2F373BD2608F00000FC73AF /* RestocksiOSTests.xctest */,
+				3780BE8326554C550029076A /* RestocksiOSSnapshotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D21825392608A07600552A31 /* Restocks */ = {
+			isa = PBXGroup;
+			children = (
+				D218253B2608A07600552A31 /* Info.plist */,
+			);
+			path = Restocks;
+			sourceTree = "<group>";
+		};
+		D21825442608A07600552A31 /* RestocksTests */ = {
+			isa = PBXGroup;
+			children = (
+				D21825472608A07600552A31 /* Info.plist */,
+				376E5355273193ED00F38B36 /* RestocksTests.swift */,
+			);
+			path = RestocksTests;
+			sourceTree = "<group>";
+		};
+		D2E036CA2609E026001D55F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37AB7CC82670A2E10029447B /* Intercom.xcframework */,
+				D242D821263952B20079D99D /* Lokalise.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F373B62608F00000FC73AF /* RestocksiOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2F373B82608F00000FC73AF /* Info.plist */,
+			);
+			path = RestocksiOS;
+			sourceTree = "<group>";
+		};
+		D2F373C12608F00000FC73AF /* RestocksiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2F373C42608F00000FC73AF /* Info.plist */,
+				376E535A273196ED00F38B36 /* RestocksiOSTests.swift */,
+			);
+			path = RestocksiOSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D21825322608A07600552A31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373B02608F00000FC73AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3780BE8226554C550029076A /* RestocksiOSSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3780BE8B26554C550029076A /* Build configuration list for PBXNativeTarget "RestocksiOSSnapshotTests" */;
+			buildPhases = (
+				3780BE7F26554C550029076A /* Sources */,
+				3780BE8026554C550029076A /* Frameworks */,
+				3780BE8126554C550029076A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3780BE8A26554C550029076A /* PBXTargetDependency */,
+			);
+			name = RestocksiOSSnapshotTests;
+			packageProductDependencies = (
+				3780BE9726554E020029076A /* SnapshotTesting */,
+			);
+			productName = RestocksiOSSnapshotTests;
+			productReference = 3780BE8326554C550029076A /* RestocksiOSSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D21825362608A07600552A31 /* Restocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D218254B2608A07600552A31 /* Build configuration list for PBXNativeTarget "Restocks" */;
+			buildPhases = (
+				D21825322608A07600552A31 /* Headers */,
+				D21825332608A07600552A31 /* Sources */,
+				D21825342608A07600552A31 /* Frameworks */,
+				D21825352608A07600552A31 /* Resources */,
+				D242D7DA26371C230079D99D /* Embed Frameworks */,
+				37557E5126973E4900D68C74 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Restocks;
+			packageProductDependencies = (
+			);
+			productName = Restocks;
+			productReference = D21825372608A07600552A31 /* Restocks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D218253F2608A07600552A31 /* RestocksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D218254E2608A07600552A31 /* Build configuration list for PBXNativeTarget "RestocksTests" */;
+			buildPhases = (
+				D218253C2608A07600552A31 /* Sources */,
+				D218253D2608A07600552A31 /* Frameworks */,
+				D218253E2608A07600552A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D21825432608A07600552A31 /* PBXTargetDependency */,
+			);
+			name = RestocksTests;
+			productName = RestocksTests;
+			productReference = D21825402608A07600552A31 /* RestocksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2F373B42608F00000FC73AF /* RestocksiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F373C62608F00000FC73AF /* Build configuration list for PBXNativeTarget "RestocksiOS" */;
+			buildPhases = (
+				D2F373B02608F00000FC73AF /* Headers */,
+				D25EBC382631781F008F9D73 /* R.Swift */,
+				D2F373B12608F00000FC73AF /* Sources */,
+				D2F373B22608F00000FC73AF /* Frameworks */,
+				D2F373B32608F00000FC73AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E036CE2609E026001D55F3 /* PBXTargetDependency */,
+			);
+			name = RestocksiOS;
+			packageProductDependencies = (
+				37AB7CC5266FC0BD0029447B /* Rswift */,
+			);
+			productName = RestocksiOS;
+			productReference = D2F373B52608F00000FC73AF /* RestocksiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2F373BC2608F00000FC73AF /* RestocksiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F373C92608F00000FC73AF /* Build configuration list for PBXNativeTarget "RestocksiOSTests" */;
+			buildPhases = (
+				D2F373B92608F00000FC73AF /* Sources */,
+				D2F373BA2608F00000FC73AF /* Frameworks */,
+				D2F373BB2608F00000FC73AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2F373C02608F00000FC73AF /* PBXTargetDependency */,
+			);
+			name = RestocksiOSTests;
+			packageProductDependencies = (
+			);
+			productName = RestocksiOSTests;
+			productReference = D2F373BD2608F00000FC73AF /* RestocksiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D218252E2608A07600552A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3780BE8226554C550029076A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D21825362608A07600552A31 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					D218253F2608A07600552A31 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
+					};
+					D2F373B42608F00000FC73AF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D2F373BC2608F00000FC73AF = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = D21825312608A07600552A31 /* Build configuration list for PBXProject "Restocks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				nl,
+				de,
+				es,
+				fr,
+				it,
+			);
+			mainGroup = D218252D2608A07600552A31;
+			packageReferences = (
+				D25EBC5626317CA4008F9D73 /* XCRemoteSwiftPackageReference "R.swift" */,
+				D2CA2CD726417F2500B4E3B2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
+			productRefGroup = D21825382608A07600552A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21825362608A07600552A31 /* Restocks */,
+				D218253F2608A07600552A31 /* RestocksTests */,
+				D2F373B42608F00000FC73AF /* RestocksiOS */,
+				D2F373BC2608F00000FC73AF /* RestocksiOSTests */,
+				3780BE8226554C550029076A /* RestocksiOSSnapshotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3780BE8126554C550029076A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21825352608A07600552A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D218253E2608A07600552A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373B32608F00000FC73AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373BB2608F00000FC73AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37557E5126973E4900D68C74 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --config .swiftlint.yml\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n";
+		};
+		D25EBC382631781F008F9D73 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/RestocksiOS/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/RestocksiOS/Resources/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3780BE7F26554C550029076A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E5359273196C200F38B36 /* RestocksiOSSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21825332608A07600552A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D218253C2608A07600552A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E5356273193ED00F38B36 /* RestocksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373B12608F00000FC73AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56EF5D927034504004FA1DF /* (null) in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F373B92608F00000FC73AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E535B273196ED00F38B36 /* RestocksiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3780BE8A26554C550029076A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F373B42608F00000FC73AF /* RestocksiOS */;
+			targetProxy = 3780BE8926554C550029076A /* PBXContainerItemProxy */;
+		};
+		D21825432608A07600552A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21825362608A07600552A31 /* Restocks */;
+			targetProxy = D21825422608A07600552A31 /* PBXContainerItemProxy */;
+		};
+		D2E036CE2609E026001D55F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = D21825362608A07600552A31 /* Restocks */;
+			targetProxy = D2E036CD2609E026001D55F3 /* PBXContainerItemProxy */;
+		};
+		D2F373C02608F00000FC73AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F373B42608F00000FC73AF /* RestocksiOS */;
+			targetProxy = D2F373BF2608F00000FC73AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3780BE8C26554C550029076A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RestocksiOSSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOSSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3780BE8D26554C550029076A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RestocksiOSSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOSSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D21825492608A07600552A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 23;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D218254A2608A07600552A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 23;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D218254C2608A07600552A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Restocks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.Restocks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D218254D2608A07600552A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Restocks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.Restocks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D218254F2608A07600552A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D21825502608A07600552A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2F373C72608F00000FC73AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestocksiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOS;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2F373C82608F00000FC73AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestocksiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOS;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2F373CA2608F00000FC73AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2F373CB2608F00000FC73AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYGQ3V5CD2;
+				INFOPLIST_FILE = RestocksiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.restocks.RestocksiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3780BE8B26554C550029076A /* Build configuration list for PBXNativeTarget "RestocksiOSSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3780BE8C26554C550029076A /* Debug */,
+				3780BE8D26554C550029076A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21825312608A07600552A31 /* Build configuration list for PBXProject "Restocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21825492608A07600552A31 /* Debug */,
+				D218254A2608A07600552A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D218254B2608A07600552A31 /* Build configuration list for PBXNativeTarget "Restocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D218254C2608A07600552A31 /* Debug */,
+				D218254D2608A07600552A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D218254E2608A07600552A31 /* Build configuration list for PBXNativeTarget "RestocksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D218254F2608A07600552A31 /* Debug */,
+				D21825502608A07600552A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F373C62608F00000FC73AF /* Build configuration list for PBXNativeTarget "RestocksiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F373C72608F00000FC73AF /* Debug */,
+				D2F373C82608F00000FC73AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F373C92608F00000FC73AF /* Build configuration list for PBXNativeTarget "RestocksiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F373CA2608F00000FC73AF /* Debug */,
+				D2F373CB2608F00000FC73AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D25EBC5626317CA4008F9D73 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.0;
+			};
+		};
+		D2CA2CD726417F2500B4E3B2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3780BE9726554E020029076A /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2CA2CD726417F2500B4E3B2 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		37AB7CC5266FC0BD0029447B /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D25EBC5626317CA4008F9D73 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D218252E2608A07600552A31 /* Project object */;
+}
