@@ -25,10 +25,10 @@ jobs:
 
     # Build
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_13.0.app && /usr/bin/xcodebuild -version
 
     - name: Build for testing
-      run: xcodebuild clean build-for-testing -workspace 'Restocks.xcworkspace' -scheme 'CI_iOS' -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild clean build-for-testing -workspace 'Restocks.xcworkspace' -scheme 'CI_iOS' -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=15.0' | xcpretty && exit ${PIPESTATUS[0]}
 
     # Upload files for tests job
     - name: Upload build
@@ -54,11 +54,11 @@ jobs:
 
     # Testing
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_13.0.app && /usr/bin/xcodebuild -version
 
     - name: Run unit tests
-      run: xcodebuild test-without-building -xctestrun 'derivedData/Build/Products/CI_iOS_iphonesimulator14.5-x86_64.xctestrun' -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=latest' -skip-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
-    # Did not find a way to dynamically load the xctestrun file yet, so we need to update its name once Github does
+      run: xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=15.0' -skip-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
+    # XCTestrun file resides in derivedData/Build/Products/
 
 
    ## Run snapshot tests ##
@@ -77,8 +77,8 @@ jobs:
 
     # Testing
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_13.0.app && /usr/bin/xcodebuild -version
 
     - name: Run snapshot tests
-      run: xcodebuild test-without-building -xctestrun 'derivedData/Build/Products/CI_iOS_iphonesimulator14.5-x86_64.xctestrun' -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=latest' -only-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
-    # Did not find a way to dynamically load the xctestrun file yet, so we need to update its name once Github does
+      run: xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=15.0' -only-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
+    # XCTestrun file resides in derivedData/Build/Products/
