@@ -26,7 +26,7 @@ jobs:
 
     # Build
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_13.0.app && /usr/bin/xcodebuild -version
 
     - name: Build for testing
       run: xcodebuild clean build-for-testing -workspace 'Restocks.xcworkspace' -scheme 'CI_iOS' -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
