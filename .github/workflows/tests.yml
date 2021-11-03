@@ -1,6 +1,7 @@
 name: Tests
 
 on:
+  workflow_dispatch:
   pull_request:
   # Run this workflow on pull_requests that target the following branches
     branches: [ main ]
