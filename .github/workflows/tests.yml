@@ -58,7 +58,7 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_13.0.app && /usr/bin/xcodebuild -version
 
     - name: Run unit tests
-      run: xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=latest' -skip-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test-without-building -xctestrun $(find . -type f -name "*.xctestrun") -derivedDataPath 'derivedData' -destination 'platform=iOS Simulator,name=iPhone 12 mini,OS=15.0' -skip-testing:RestocksiOSSnapshotTests | xcpretty && exit ${PIPESTATUS[0]}
     # Did not find a way to dynamically load the xctestrun file yet, so we need to update its name once Github does
 
 
